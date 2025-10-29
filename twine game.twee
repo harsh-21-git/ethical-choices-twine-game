@@ -1,0 +1,241 @@
+:: StoryTitle
+Reflect on Ethics (3 Endings, Full Flow)
+
+
+:: StoryData
+{
+  "ifid": "BFB0976E-6006-4AA6-8E98-8F3458492000",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Start",
+  "zoom": 1
+}
+
+
+:: ACM Reflection (Ethical Success) [reflection] {"position":"1775,400","size":"160,140"}
+
+Merge: Pause and reflect on what you did against professional/ethical principles (ACM-like):
+ - Avoid harm
+ - Be honest and fair
+ - Contribute to society
+
+You (Developer/Hacker) followed a path that contributed to fixing the issue and protecting users.
+
+[[Write final report comparing both perspectives->Final Report - Ethical Success]]
+[[Restart the simulation->Start]]
+
+
+
+:: ACM Reflection (Exploit Failure) [reflection] {"position":"1775,750","size":"160,140"}
+
+Merge: Pause and reflect on what you did against professional/ethical principles (ACM-like):
+ - Avoid harm
+ - Be honest and fair
+ - Contribute to society
+
+Your exploit harmed victims and put you at legal and reputational risk.
+
+[[Write final report comparing both perspectives->Final Report - Exploit Failure]]
+[[Restart the simulation->Start]]
+
+
+
+:: ACM Reflection (Public Leak) [reflection] {"position":"2175,525","size":"160,140"}
+
+Merge: Pause and reflect on what you did against professional/ethical principles (ACM-like):
+ - Avoid harm
+ - Be honest and fair
+ - Contribute to society
+
+Your public disclosure warned users but also caused internal disruption and potential misuse.
+
+[[Write final report comparing both perspectives->Final Report - Public Leak]]
+[[Restart the simulation->Start]]
+
+
+
+:: Cloud: Public learns about the vulnerability [process] {"position":"1575,525","size":"140,120"}
+
+Cloud: The public becomes aware. Pressure mounts on the company, but attackers may also take advantage.
+
+[[Exception/Error: Company reputation loss or legal issues->Exception/Error: Company reputation loss or legal issues]]
+
+
+
+:: Database: Exploit shared on dark web [process] {"position":"1375,750","size":"140,120"}
+
+Database: Exploit details are distributed in underground marketplaces; attackers use it against systems and users.
+
+[[Output: Caught exploiting system; lose credibility->Output: Caught exploiting system; lose credibility]]
+
+
+
+:: Database: Flaw details shared online [process] {"position":"1375,525","size":"140,120"}
+
+Database: The vulnerability details are now public; users and attackers can read them.
+
+[[Cloud: Public learns about the vulnerability->Cloud: Public learns about the vulnerability]]
+
+
+
+:: Decision: Choose your role [decision] {"position":"525,450","size":"100,100"}
+
+Decision: Choose your role — will you play as a Developer or as a Hacker?
+
+[[Play as Developer->Developer Process]]
+[[Play as Hacker->Hacker Process]]
+
+
+
+:: Developer Decision: How should you respond to this flaw? [decision] {"position":"925,400","size":"120,120"}
+
+Developer Decision: How should you respond to this flaw?
+
+[[Report privately to the company->Process: Report flaws privately to the company]]
+[[Leak publicly to protect users->Process: Leak flaws publicly to protect users]]
+
+
+
+:: Developer Process [process] {"position":"725,400","size":"100,100"}
+
+Developer Process:
+You analyze and confirm data exposure risk. You inspect logs, reproduce the issue, and estimate impact.
+
+[[Proceed to decision (How should you respond?)->Developer Decision: How should you respond to this flaw?]]
+
+
+
+:: Exception/Error: Company reputation loss or legal issues [error] {"position":"1775,525","size":"160,120"}
+
+Exception/Error: There may be harm — legal exposure, customer trust loss, or operational chaos. The company reacts under pressure.
+
+[[Output: Public safe but internal chaos at company->Output: Public safe but internal chaos at company]]
+
+
+
+:: Final Report - Ethical Success [final] {"position":"2375,400","size":"200,140"}
+You chose to exploit the flaw for personal benefit.  
+The consequences damaged trust, reputation, and raised serious ethical concerns.  
+
+<a href="https://github.com/harsh-21-git/ethical-choices-twine-game/issues/new?title=Ending+3:+Exploit+Failure" target="_blank">Submit Your Result</a>
+
+[[Restart Game->Start]]
+
+
+
+:: Final Report - Exploit Failure [final] {"position":"2375,750","size":"200,140"}
+You revealed the issue to the public, exposing truth but also causing disruption.  
+Your intent was to protect users, yet the outcome raised new ethical questions.  
+
+<a href="https://github.com/harsh-21-git/ethical-choices-twine-game/issues/new?title=Ending+2:+Public+Leak" target="_blank">Submit Your Result</a>
+
+[[Restart Game->Start]]
+
+
+
+:: Final Report - Public Leak [final] {"position":"2375,525","size":"200,140"}
+You revealed the issue to the public, exposing truth but also causing disruption.  
+Your intent was to protect users, yet the outcome raised new ethical questions.  
+
+<a href="https://github.com/harsh-21-git/ethical-choices-twine-game/issues/new?title=Ending+2:+Public+Leak" target="_blank">Submit Your Result</a>
+
+[[Restart Game->Start]]
+
+
+
+:: Hacker Decision: What should you do with this flaw? [decision] {"position":"925,525","size":"120,120"}
+
+Hacker Decision: What should you do with this flaw?
+
+[[Report to developer responsibly->Process: Report to the developer responsibly]]
+[[Exploit or sell the flaw->Process: Exploit or sell the flaw]]
+
+
+
+:: Hacker Process [process] {"position":"725,525","size":"100,100"}
+
+Hacker Process:
+You discover a system vulnerability — a flaw that could be used to access or exfiltrate data.
+
+[[Proceed to decision (What should you do?)->Hacker Decision: What should you do with this flaw?]]
+
+
+
+:: Manual Operation: Company reviews and fixes flaws [process] {"position":"1375,400","size":"140,120"}
+
+Company reviews your report, reproduces the issue, and begins deploying a fix. This may involve coordination, testing, and a patch.
+
+[[Output: Flaws fixed; you gain recognition->Output: Flaws fixed; you gain recognition]]
+
+
+
+:: Output: Caught exploiting system; lose credibility [error] {"position":"1575,750","size":"140,120"}
+
+Output: If detected, you may face legal consequences, reputation loss, and harm to victims.
+
+[[Proceed to Reflection (ACM)->ACM Reflection (Exploit Failure)]]
+
+
+
+:: Output: Collaboration with developer improves system [output] {"position":"1375,650","size":"140,120"}
+
+Output: The developer works with you, fixes the issue, and the system improves. You may get recognition or a bounty.
+
+[[Proceed to Reflection (ACM)->ACM Reflection (Ethical Success)]]
+
+
+
+:: Output: Flaws fixed; you gain recognition [output] {"position":"1575,400","size":"140,120"}
+
+Output: The company fixes the vulnerability. You are acknowledged (or remain anonymous but credited) and the system is safer.
+
+[[Proceed to Reflection (ACM)->ACM Reflection (Ethical Success)]]
+
+
+
+:: Output: Public safe but internal chaos at company [output] {"position":"1975,525","size":"160,120"}
+
+Output: Users are informed, but the company may suffer internally. Long-term consequences vary.
+
+[[Proceed to Reflection (ACM)->ACM Reflection (Public Leak)]]
+
+
+
+:: Process: Exploit or sell the flaw [process] {"position":"1175,750","size":"140,120"}
+
+Process: You decide to exploit or sell the vulnerability. The exploit may be traded or shared on criminal forums.
+
+[[Database: Exploit shared on dark web->Database: Exploit shared on dark web]]
+
+
+
+:: Process: Leak flaws publicly to protect users [process] {"position":"1175,525","size":"140,120"}
+
+Process: You publish the vulnerability details publicly (blog, forum, social media) to force rapid action and warn users.
+
+[[Database: Flaw details shared online->Database: Flaw details shared online]]
+
+
+
+:: Process: Report flaws privately to the company [process] {"position":"1175,400","size":"120,120"}
+
+Process: You contact the company/maintainers and provide details privately. You give them time to respond/fix.
+
+[[Manual operation: Company reviews and fixes flaws->Manual Operation: Company reviews and fixes flaws]]
+
+
+
+:: Process: Report to the developer responsibly [process] {"position":"1175,650","size":"140,120"}
+
+Process: As a hacker, you responsibly disclose the exploit to the developer (like a bug bounty report), with steps to reproduce.
+
+[[Output: Collaboration with developer improves system->Output: Collaboration with developer improves system]]
+
+
+
+:: Start {"position":"325,450","size":"100,100"}
+
+You are about to take a course of actions that will challenge your understanding of ethics and security.
+
+[[Begin->Decision: Choose your role]]
+
